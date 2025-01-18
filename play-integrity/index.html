@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обход Play Integrity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 5em;
+            font-family: 'Google Sans', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em
+            
+            
+        }
+        pre {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 500px;
+            /* overflow: hidden; /* скрывает переполнение */
+    white-space: pre-wrap;
+  overflow: auto;
+  word-break: break-all;
+    
+        }
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 500px;
+            /* overflow: hidden; /* скрывает переполнение */
+    word-wrap: break-all;
+        }
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .text-wrapper {
+            font-size: 0.95em;
+            font-family: 'Hack', monospace; /* Задаем шрифт Hack */
+            text-align: left; /* Выравнивание текста вправо */
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Обход Play Integrity</h1>
+    <p>Добро пожаловать! На этой странице представлена подробная инструкция по получению всех трёх видов аттестации <b>Play Integrity</b> с <b>Root-правами</b>.</p>
+    <h2>Требования</h2>
+    <p>
+Для успешной установки вам потребуется смартфон на <b>Android версии 12-14</b> (версии 15 и выше не подойдут). Также необходимо, чтобы на устройстве был установлен <b>ЧИСТЫЙ Magisk</b>, разблокирован загрузчик и использовалась <b>стоковая прошивка</b>.</p>
+    <h2>Установка Magisk</h2>
+    <p>Первым делом вам необходимо иметь подходящий <b>Magisk</b> версии от <b>26.4 до 27</b>. Вы можете использовать и обычный <b>Magisk</b>, но мы будем устанавливать <b>Magisk Kitsune</b>. В обычном <b>Magisk</b> перейдите в настройки, выберите канал обновлений на свой и установите:</p>
+    <pre>https://raw.githubusercontent.com/HuskyDG/magisk-files/refs/heads/main/canary.json</pre>
+    <p>Отключите, если включено, скрытие приложения. После этого в главном меню вы сможете обновить приложение. Обязательно обновите и зайдите в ваш новый <b>Magisk Delta</b>. Установите <b>Magisk Kitsune (Delta)</b> и перезагрузите смартфон.</p>
+    <h2>Настройка Magisk</h2>
+    <p>После установки, требуется изменить некоторые настройки:</p>
+    <p class="text-wrapper">Check Updates -> false<br>
+    Hide App -> true<br>
+    Zygisk -> true<br>
+    MagiskHide -> true<br>
+    Enforce SuList -> false<br>
+    Configure MagiskHide -> all<br>
+    Mount Namespace Mode -> isolated<br>
+    
+    </p>
+    <p>После установки данных значений, перезагрузите смартфон.</p>
+    <h2>Модули</h2>
+    <p>Требуется установить следующие модули по порядку без лишних модулей. Для вашего удобства, чтобы скачать кликните по одному из модулей:</p>
+    <p class="text-wrapper">
+        <a href="Busybox_for_Android_NDK-1.36.1(13614).zip">BusyBox for Android NDK [1.36.1]</a><br>
+        <a href="integrity-WIZARDV-3.4.3-1.zip">integrity-WIZARD [3.4.3-1]</a><br>
+        <a href="LSPosed-v1.9.3_mod-7244-zygisk-release.zip">Zygisk - LSposed [1.9.3_mod]</a><br>
+        <a href="zygisk-maphide-v2.0-release.zip">Zygisk MapHide [2.0]</a>
+    </p>
+    <p>Перезагрузите устройство, и в шторке появится сам <b>LSposed</b>. Скачайте последнюю версию <b>Hide My App List</b> и скройте определённые приложения для обхода, например: <b>Swoo Pay</b> и <b>Mir Pay</b>.</p>
+    <p><a href="https://t.me/mikeapplee">Написать разработчику в TG</a></p>
+</body>
+</html>
