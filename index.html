@@ -1,30 +1,57 @@
-<body><h3 class="blink"># superisuer</h3>
-<a href="https://github.com/superisuer" style="padding-top: 55px">github</a><br>
-<a href="play-integrity" style="padding-top: 115px">play-integrity</a>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Lucida Console';
+    }
+
+    .blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      from { opacity: 1; }
+      to { opacity: 0.5; }
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    a {
+      display: block;
+      margin: 15px 0;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h3 class="blink"># superisuer</h3>
+    <a href="https://github.com/superisuer" target="_blank">GitHub</a>
+    <a href="play-integrity" target="_blank">Play Integrity</a>
+    <a href="https://t.me/hukeres" target="_blank">Telegram Channel</a>
+  </div>
 </body>
-<style>
-
-body {
-  position: relative;
-  height: 100vh;
-  margin: 0;
-}
-.blink {
-    animation: blink 1s infinite;
-   }
-   @keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0.5; }
-   }
-h3, a{
- position: absolute;
- top: 50%;
- transform: translateY(-50%);
- width: 100%;
- text-align: center;
- margin: 0;
- font-size: 20;
- font-family:'Lucida Console';
-
-}
-</style>
+</html>
